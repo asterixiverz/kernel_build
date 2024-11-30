@@ -36,8 +36,8 @@ jobs:
           
       - name: Build kernel
         run: |
-          export KBUILD_BUILD_USER="iverz"
-          export KBUILD_BUILD_HOST="githubworkflow"
+          export KBUILD_BUILD_USER="nobody"
+          export KBUILD_BUILD_HOST="android"
           export PATH=$GITHUB_WORKSPACE/clang/bin:${PATH}
           args="                  ARCH=arm64 \
                                   O=../out \

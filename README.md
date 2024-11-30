@@ -1,7 +1,4 @@
-# MikaKernel Builder
-
-Meow!
-
+# Kernel Builder
 
 ## Usage:
 
@@ -18,6 +15,6 @@ Meow!
    |      KERNEL_CONFIG      | Your device config                                |
    |       BUILD_ARGS        | Your kernel compile aguments, separate with space |
 
-3. Click `Run workflow` in `Action->Build MikaKernel`
+3. Click `Run workflow` in `Action->Build Kernel`
 
 Warning: For pre-5.4 kernel, you should backport LLVM related changes for ur kernel, or just downgrade toolchains defined in build-kernel.yml to android12-dev branch and remove "LLVM=1 LLVM_IAS=1" flags in config.env
